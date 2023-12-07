@@ -1,0 +1,21 @@
+{
+  "ts-node": {
+    "esm": true
+  },
+  "compilerOptions": {
+    "allowJs": true,
+    "target": "es2016",
+    "module": "CommonJS",
+    "typeRoots": ["./types/*"],
+    "outDir": "./build",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "moduleResolution": "Node"
+  },
+
+  "exclude": ["build", "node_modules", "types"]
+}

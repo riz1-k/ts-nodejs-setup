@@ -1,0 +1,34 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo '🔄 Initializing the formatting check, test, and build process before committing...'
+
+# Check Prettier standards
+pnpm run check-format ||
+(
+    echo '🚫 Prettier standards are not met.
+          Run pnpm run format, include changes, and attempt to commit again.'
+    false;
+)
+
+# Check ESLint Standards
+pnpm run check-lint ||
+(
+        echo '🚫 ESLint standards are violated.
+              Implement the necessary changes listed above, include them, and try committing again.'
+        false;
+)
+
+# If all checks pass... we can attempt a build
+echo '✅ Formatting and linting checks passed. Initiating build...'
+
+pnpm run build ||
+(
+    echo '🔴 Build process unsuccessful.
+          Refer to the errors above for more information.'
+    false;
+)
+
+# If all checks pass and build is successful... we can commit
+echo '✅ All checks have passed and build was successful. Proceeding with the commit...'
+
