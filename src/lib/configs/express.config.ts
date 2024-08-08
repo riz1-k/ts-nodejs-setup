@@ -3,10 +3,10 @@ import cookieParser from "cookie-parser"
 import cors, { type CorsOptions } from "cors"
 import type { Application } from "express"
 import helmet from "helmet"
-import morgan from "morgan"
 import apiRouter from "../../apis"
 import { env } from "./env"
 
+import morgan from "morgan"
 const whiteListedOrigins = ["http://localhost:3000"]
 
 const corsOptions: CorsOptions = {

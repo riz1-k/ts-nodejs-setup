@@ -1,6 +1,3 @@
-#!/bin/s
-. "$(dirname "$0")/_/husky.sh"
-
 echo '🔄 Initializing the formatting check, test, and build process before committing...'
 
 # Check Prettier standards
