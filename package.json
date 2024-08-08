@@ -4,6 +4,9 @@
 	"main": "src/app.ts",
 	"scripts": {
 		"dev": "tsx src/app.ts",
+		"build": "tsc",
+		"check-format": "prettier --check .",
+		"check-lint": "eslint . --ext ts --ext tsx --ext js",
 		"prepare": "husky"
 	},
 	"author": "riz1-k",
@@ -35,7 +38,7 @@
 		"eslint-plugin-n": "^16.6.2",
 		"eslint-plugin-promise": "^6.1.1",
 		"eslint-plugin-simple-import-sort": "^10.0.0",
-		"husky": "^8.0.3",
+		"husky": "^9.1.4",
 		"morgan": "^1.10.0",
 		"prettier": "^3.3.3",
 		"typescript": "^5.5.4"

@@ -1,3 +1,4 @@
+
 echo '🔄 Initializing the formatting check, test, and build process before committing...'
 
 # Check Prettier standards

@@ -1,6 +1,7 @@
-import { expressConfig } from "./lib/configs/express.config"
-import { env } from "./lib/configs/env"
 import express from "express"
+
+import { env } from "./lib/configs/env"
+import { expressConfig } from "./lib/configs/express.config"
 
 const app = express()
 
@@ -13,4 +14,4 @@ async function main() {
 	})
 }
 
-main()
+void main()
