@@ -49,11 +49,11 @@ export function expressConfig(app: Application) {
           <meta charset="UTF-8">
           <meta http-equiv="X-UA-Compatible" content="IE=edge">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>Habit Tracker</title>
+          <title>WOW Tea</title>
         </head>
         <body>
-          <h1>Habit Tracker</h1>
-          <p>Welcome to the Habit Tracker API</p>
+          <h1>Madrasa Payment</h1>
+          <p> API is running on port ${env.PORT} successfully</p>
         </body>
       </html>
     `
