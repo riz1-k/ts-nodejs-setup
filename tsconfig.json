@@ -1,0 +1,55 @@
+{
+	"compilerOptions": {
+		/* Language and Environment */
+		"target": "ESNext",
+		"lib": ["DOM", "ESNext"],
+		"moduleDetection": "force",
+
+		/* Modules */
+		"module": "NodeNext",
+		"rootDir": "./src",
+		"moduleResolution": "NodeNext",
+		"typeRoots": ["./node_modules/@types", "./src/types"],
+		"resolvePackageJsonExports": true,
+		"resolvePackageJsonImports": true,
+		"resolveJsonModule": true,
+
+		/* Emit */
+		"declaration": false,
+		"declarationMap": false,
+		"sourceMap": true,
+		"outDir": "./dist",
+		"downlevelIteration": true,
+
+		/* Interop Constraints */
+		"isolatedModules": true,
+		"verbatimModuleSyntax": false,
+		"isolatedDeclarations": false,
+		"forceConsistentCasingInFileNames": true,
+
+		/* Type Checking */
+		"strict": true,
+		"noImplicitAny": true,
+		"strictNullChecks": true,
+		"strictFunctionTypes": true,
+		"strictBindCallApply": true,
+		"strictPropertyInitialization": true,
+		"noImplicitThis": true,
+		"useUnknownInCatchVariables": true,
+		"alwaysStrict": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"exactOptionalPropertyTypes": true,
+		"noImplicitReturns": false,
+		"noFallthroughCasesInSwitch": true,
+		"noUncheckedIndexedAccess": true,
+		"noImplicitOverride": true,
+		"noPropertyAccessFromIndexSignature": true,
+		"allowUnusedLabels": false,
+		"allowUnreachableCode": false,
+
+		/* Completeness */
+		"skipDefaultLibCheck": true,
+		"skipLibCheck": true
+	}
+}
